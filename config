@@ -31,7 +31,7 @@ white = #fff
 blue = #00f
 green = #0f0
 
-[bar/example]
+[bar/i3bar]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 25
@@ -61,7 +61,7 @@ font-2 = "Wuncon Siji:pixelsize=10;1"
 
 modules-left = i3
 modules-center = 
-modules-right = player-mpris-tail pulseaudio filesystem memory cpu wlan eth temperature date 
+modules-right = player-mpris-tail pulseaudio filesystem memory cpu updates-arch-combined wlan eth temperature date 
 
 tray-position = right
 tray-padding = 2
@@ -71,7 +71,7 @@ tray-padding = 2
 ;wm-restack = bspwm
 ;wm-restack = i3
 
-override-redirect = true
+;override-redirect = true
 
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
@@ -415,6 +415,11 @@ menu-2-0 = power off
 menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
+[module/updates-arch-combined]
+type = custom/script
+exec = ~/.config/polybar/scripts/updates-arch/updates-arch-combined.sh
+interval = 600
 
 [module/player-mpris-tail]
 type = custom/script
