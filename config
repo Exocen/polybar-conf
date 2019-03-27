@@ -64,7 +64,7 @@ font-2 = Siji:pixelsize=10;1
 
 modules-left = i3
 modules-center =
-modules-right = player-mpris-tail pulseaudio xbacklight filesystem memory cpu temperature wlan eth battery date
+modules-right = player-mpris-tail pulseaudio filesystem memory cpu temperature wlan eth battery date
 
 tray-position = right
 tray-padding = 1
