@@ -58,6 +58,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = Siji:pixelsize=10;1
 
 ;siji manual install if siji-git does not work
+;git clone https://github.com/stark/siji
 ;siji.pcf & siji.bdf >> .local/share/fonts >> fc-cache >> fc-list | grep siji must display siji
 
 modules-left = i3
