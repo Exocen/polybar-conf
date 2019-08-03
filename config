@@ -28,6 +28,7 @@ black = #000
 white = #fff
 blue = #00f
 green = #0f0
+grey = #808080
 
 [bar/i3bar]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -55,7 +56,8 @@ module-margin-right = 1
 
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = Siji:pixelsize=10;1
+font-2 = Siji
+font-3 = Icons
 
 ;siji manual install if siji-git does not work
 ;git clone https://github.com/stark/siji
@@ -63,7 +65,7 @@ font-2 = Siji:pixelsize=10;1
 
 modules-left = i3
 modules-center =
-modules-right = player-mpris-tail pulseaudio filesystem memory cpu temperature wlan battery date
+modules-right = player-mpris-tail pulseaudio filesystem memory cpu temperature wlan battery date xkeyboard
 
 tray-position = right
 tray-padding = 1
@@ -96,15 +98,17 @@ blacklist-0 = num lock
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
+format-prefix-underline = ${colors.grey}
 
 label-layout = %layout%
-label-layout-underline = ${colors.secondary}
+label-layout-underline = ${colors.grey}
 
-label-indicator-padding = 2
+label-indicator-padding = 1
 label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
+label-indicator-background = ${colors.background}
+label-indicator-underline = ${colors.grey}
+label-indicator-on = %icon%
+indicator-icon-0 = caps lock;-CL;
 
 [module/filesystem]
 type = internal/fs
@@ -116,7 +120,6 @@ label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 label-mounted-underline = #ffff00
-
 [module/bspwm]
 type = internal/bspwm
 
