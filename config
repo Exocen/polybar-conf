@@ -65,7 +65,7 @@ font-3 = Icons
 
 modules-left = i3
 modules-center =
-modules-right = player-mpris-tail pulseaudio filesystem memory cpu temperature wlan battery date xkeyboard
+modules-right = mpd pulseaudio filesystem memory cpu temperature wlan battery date xkeyboard
 
 tray-position = right
 tray-padding = 1
@@ -191,7 +191,7 @@ icon-play = 
 icon-pause = 
 icon-next = 
 
-label-song-maxlen = 25
+label-song-maxlen = 45
 label-song-ellipsis = true
 
 [module/xbacklight]
