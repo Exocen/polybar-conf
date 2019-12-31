@@ -55,9 +55,8 @@ module-margin-left = 1
 module-margin-right = 1
 
 font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = Siji
-font-3 = Symbols Nerd Font:size=8:antialias=false
+font-1 = Siji
+font-2 = Hack Nerd Font Mono:size=10:antialias=false
 
 ;siji manual install if siji-git does not work
 ;git clone https://github.com/stark/siji
@@ -194,7 +193,7 @@ icon-play = 
 icon-pause = 
 icon-next = 
 icon-repeat = 凌
-icon-random = 
+icon-random = 
 
 toggle-on-foreground = #ff
 toggle-off-foreground = #55
